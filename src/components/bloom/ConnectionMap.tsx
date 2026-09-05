@@ -104,7 +104,7 @@ export function ConnectionMap() {
             })}
             {NODES.map((n, i) => {
               const a = pos(n.angle);
-              const b = pos(NODES[(i + 1) % NODES.length].angle);
+              const b = pos(NODES[(i + 1) % NODES.length]?.angle ?? 0);
               return (
                 <line
                   key={`ring-${n.id}`}
