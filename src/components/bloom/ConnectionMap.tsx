@@ -19,7 +19,7 @@ const NODES: Node[] = [
     color: "var(--mood)",
     icon: Smile,
     angle: -90,
-    note: { text: "Better sleep often leads to a brighter mood.", side: "right", dy: -34 },
+    note: { text: "Better sleep often leads to a brighter mood.", side: "right", dy: -62 },
   },
   {
     id: "habits",
@@ -27,7 +27,7 @@ const NODES: Node[] = [
     color: "var(--habits)",
     icon: Sprout,
     angle: -30,
-    note: { text: "Consistent habits → higher energy.", side: "right", dy: 18 },
+    note: { text: "Consistent habits → higher energy.", side: "right", dy: 4 },
   },
   {
     id: "cycle",
@@ -35,7 +35,7 @@ const NODES: Node[] = [
     color: "var(--cycle)",
     icon: Droplet,
     angle: 30,
-    note: { text: "Tracking your cycle helps you plan better.", side: "right", dy: 74 },
+    note: { text: "Tracking your cycle helps you plan better.", side: "right", dy: 72 },
   },
   {
     id: "energy",
@@ -43,7 +43,7 @@ const NODES: Node[] = [
     color: "var(--energy)",
     icon: Zap,
     angle: 90,
-    note: { text: "More consistency → better results.", side: "left", dy: 120 },
+    note: { text: "More consistency → better results.", side: "left", dy: 118 },
   },
   {
     id: "study",
@@ -51,7 +51,7 @@ const NODES: Node[] = [
     color: "var(--study)",
     icon: BarChart3,
     angle: 150,
-    note: { text: "Higher energy improves focus.", side: "left", dy: 60 },
+    note: { text: "Higher energy improves focus.", side: "left", dy: 56 },
   },
   {
     id: "sleep",
@@ -59,7 +59,7 @@ const NODES: Node[] = [
     color: "var(--sleep)",
     icon: Moon,
     angle: -150,
-    note: { text: "More sleep → higher focus.", side: "left", dy: 0 },
+    note: { text: "More sleep → higher focus.", side: "left", dy: -8 },
   },
 ];
 
@@ -83,7 +83,7 @@ export function ConnectionMap() {
         </button>
       </header>
 
-      <div className="relative mx-auto mt-4 h-[340px] w-full max-w-[440px]">
+      <div className="relative mx-auto mt-4 h-[360px] w-full max-w-[540px]">
         {/* links */}
         <svg viewBox="-160 -160 320 320" className="absolute inset-0 size-full overflow-visible">
           <g stroke="currentColor" className="text-primary/35" fill="none">
@@ -164,7 +164,7 @@ export function ConnectionMap() {
         {NODES.filter((n) => n.note).map((n) => (
           <p
             key={`note-${n.id}`}
-            className="absolute hidden max-w-[132px] rounded-lg border border-border bg-secondary/60 px-2.5 py-1.5 text-[10.5px] leading-snug text-muted-foreground transition-opacity duration-300 lg:block"
+            className="absolute hidden max-w-[124px] rounded-lg border border-border bg-secondary/60 px-2.5 py-1.5 text-[10.5px] leading-snug text-muted-foreground transition-opacity duration-300 lg:block"
             style={{
               top: `calc(50% + ${n.note!.dy}px)`,
               [n.note!.side === "left" ? "left" : "right"]: "-8px",
