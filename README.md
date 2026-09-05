@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Insight Map
+
+this is our current home page could youu please make it better and add more visualyy appealing and striking visuallyy which is possible with ractt compnnets and also like mapp route not those but like connectionn mapp like yk what i mean and all those stuff???? copuld you make itt?? anmdake itt premium and PREM IUMM High end app 
+
+the referrnce is the image attckedd soo make it exaclttyy like thta
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/28ad08f7-1c05-445f-8e56-2a748cfd9201).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
