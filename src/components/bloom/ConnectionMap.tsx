@@ -10,7 +10,7 @@ type Node = {
   note?: { text: string; side: "left" | "right"; dy: number };
 };
 
-const R = 118;
+const R = 128;
 
 const NODES: Node[] = [
   {
@@ -164,10 +164,10 @@ export function ConnectionMap() {
         {NODES.filter((n) => n.note).map((n) => (
           <p
             key={`note-${n.id}`}
-            className="absolute hidden max-w-[124px] rounded-lg border border-border bg-secondary/60 px-2.5 py-1.5 text-[10.5px] leading-snug text-muted-foreground transition-opacity duration-300 lg:block"
+            className="absolute hidden max-w-[116px] rounded-lg border border-border bg-secondary/60 px-2.5 py-1.5 text-[10.5px] leading-snug text-muted-foreground transition-opacity duration-300 lg:block"
             style={{
               top: `calc(50% + ${n.note!.dy}px)`,
-              [n.note!.side === "left" ? "left" : "right"]: "-8px",
+              [n.note!.side === "left" ? "left" : "right"]: "-14px",
               opacity: active && active !== n.id ? 0.3 : 1,
             }}
           >
